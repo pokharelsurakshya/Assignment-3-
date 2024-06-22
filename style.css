@@ -1,33 +1,43 @@
-html {
-    font-family: sans-serif;
-  }
+html, body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure body takes the full height of the viewport */
+}
+
+div {
+  /* sizing and position */
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  /* text */
+  font-size: 18px;
+  text-align: center;
+  color: white; /* Choose a text color which contrasts well with its background */
+  text-shadow: 1px 1px 1px black;
+  /* border */
+  border-radius: 10px;
+  border: 1px solid #990000;
+  /* background */
+  background-color: red;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  /* other effects */
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6), 2px 2px 5px black;
   
-  /* Your CSS below here */
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .cool-box {
-    width: 200px; /* Reasonable width for a large box */
-    height: 100px; /* Reasonable height for a large box */
-    display: flex;
-    justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
-    font-size: 1.125rem; /* Around 17-18 pixels computed style. 16px * 1.125 = 18px */
-    background-color: #ff0000; /* Base color for the design */
-    color: #ffffff; /* Contrasting color for the text */
-    text-shadow: 1px 1px 1px black; /* Black text shadow */
-    border-radius: 10px; /* Fairly subtle border radius */
-    border: 1px solid #cc0000; /* 1-pixel solid border with a slightly darker shade */
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
-    box-shadow: 
-        3px 3px 5px rgba(0, 0, 0, 0.3), /* Standard box shadow to make the box look slightly raised */
-        inset 3px 3px 5px rgba(255, 255, 255, 0.3), /* Semi-transparent white shadow near the top left */
-        inset -3px -3px 5px rgba(0, 0, 0, 0.3); /* Semi-transparent black shadow near the bottom right */
-  }
+  /* Flexbox for centering text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
